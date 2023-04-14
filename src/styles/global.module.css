@@ -1,8 +1,11 @@
 /* global.module.css */
+
 :root {
   --primary-color: #4caf50;
   --text-color: #333;
   --link-color: #4caf50;
   --social-icon-color: #333;
-  --header-height: 60px;
+  --header-height: 150px;
+  --font-family-sans-serif: 'Brandon Grotesque', sans-serif;
+  --font-family-serif: 'Merriweather', serif;
 }

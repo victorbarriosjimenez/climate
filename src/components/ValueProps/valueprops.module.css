@@ -1,0 +1,50 @@
+.propsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.prop img {
+  max-width: 100%;
+  float: left;
+  margin-right: 2rem;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .prop {
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .prop img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}

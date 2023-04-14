@@ -1,28 +1,67 @@
 import React from 'react';
-import styles from './Header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faFacebook,
+    faTwitter,
+    faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
+
+import styles from './header.module.css';
 
 function Header() {
-  return (
-    <header className={styles.header}>
-      <nav>
-        <div className={styles.logo}>
-          <a href="/">
-            <img src="logo.png" alt="Campaign Logo" />
-          </a>
-        </div>
-        <ul className={styles.navLinks}>
-          {/* Secciones extra */}
-        </ul>
-        <div className={styles.rightSection}>
-          <div className={styles.unityText}>America Latina Unida</div>
-          <ul className={styles.socialLinks}>
-            <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>)
+    return (
+        <header className={styles.header}>
+            <nav className={styles.nav}>
+                <div className={styles.logo}>
+                    <a href="/">
+                        <img src="logo.png" alt="Campaign Logo" />
+                    </a>
+                </div>
+                {/* <ul className={styles.navLinks}>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul> */}
+                <div className={styles.rightSection}>
+                    <span className={styles.unityText}>
+                        America Latina Unida
+                    </span>
+                    <ul className={styles.socialLinks}>
+                        <li>
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FontAwesomeIcon icon={faFacebook} />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FontAwesomeIcon icon={faTwitter} />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    );
 }
 
 export default Header;

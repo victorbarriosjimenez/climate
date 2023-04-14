@@ -2,9 +2,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
     height: var(--header-height);
-    padding: 0 20px;
+    padding: 0 120px;
 }
 
 .logo img {
@@ -21,8 +20,10 @@ nav {
 
 .right-section {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
+    background-color: red;
 }
 
 .unity-text {

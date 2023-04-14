@@ -1,0 +1,23 @@
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+}
+
+.callToAction {
+    margin-top: 2rem;
+}
