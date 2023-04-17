@@ -1,102 +1,145 @@
-/* CampaignInstructions Component */
-.instructions {
+.campaignInstructions {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0;
+  align-items: flex-start;
+  padding-bottom: 20px;
 }
 
-.instructions__left {
-  flex: 1;
+.imageContainer {
+  position: relative;
+  width: calc(50% - 1rem);
+  padding-right: 4rem;
+  padding-top: 4rem;
+  margin-bottom: 20px;
+}
+
+.linksContainer {
+  margin-top: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.social {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2rem;
+  align-items: flex-start;
+  padding: 10px 0;
 }
 
-.instructions__right {
-  flex: 1;
-  padding: 0 2rem;
-}
-
-.instructions__title {
+.socialLegend {
+  margin: 0 10px 0 0;
+  font-size: 0.8rem;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 2rem;
+  white-space: nowrap;
 }
 
-.instructions__list {
-  list-style: none;
-  padding-left: 0;
+.icon {
+  margin: 0 10px;
+}
+
+.instructionsContainer {
+  width: calc(50% - 1rem);
+}
+
+.list {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
   margin: 0;
 }
 
-.instructions__list-item {
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  animation-duration: 1.5s;
-  animation-name: instructions-list;
-  animation-iteration-count: infinite;
-}
-
-.instructions__list-item:nth-child(1) {
-  animation-delay: 0.3s;
-}
-
-.instructions__list-item:nth-child(2) {
-  animation-delay: 0.6s;
-}
-
-.instructions__list-item:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
-.instructions__list-item:nth-child(4) {
-  animation-delay: 1.2s;
-}
-
-.instructions__list-item:first-of-type {
-  background-color: #28a745;
-  color: white;
-}
-
-.instructions__list-item:last-of-type {
-  margin-bottom: 0;
-}
-
-.instructions__list-item:last-of-type p {
-  margin-bottom: 0;
-}
-
-.instructions__list-item p {
-  margin: 0;
-  margin-left: 1.5rem;
-  font-size: 1.2rem;
-}
-
-.instructions__list-item p strong {
-  color: white;
-}
-
-.instructions__image {
-  display: flex;
+li {
   justify-content: center;
-  margin-bottom: 2rem;
+  padding: 15px;
 }
 
-.instructions__links {
-  display: flex;
-  justify-content: center;
+
+.subtitle {
+  font-family: 'Merriweather Regular', serif;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.instructions__links a {
-  margin: 0 1rem;
+.instruction {
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.instructions__links a:last-of-type {
-  margin-right: 0;
+.title {
+  font-family: 'Merriweather Regular', serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
 }
 
-/* Media Queries */
+.number {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.active {
+  color: #fff;
+  background: linear-gradient(45deg, #8955fc, #4588b2, #08b96c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.active li > p {
+  color: white;
+  transition: 5s;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 100%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .campaignInstructions {
+    flex-direction: column;
+  }
+    .instructionsContainer {
+      width: 100%;
+        padding: 1rem;
+        padding-bottom: 1rem;
+    }
+  .imageContainer {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+  }
+  .social {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}

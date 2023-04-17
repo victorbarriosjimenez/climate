@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -6,9 +6,8 @@ import {
     faTwitter,
     faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import styles from './campaign.module.css';
-import Typography from '../Typography/Typography';
+import image from '../../assets/10.png';
 
 const CampaignInstructions = ({ instructions }) => {
     const [currentInstruction, setCurrentInstruction] = useState(0);
@@ -29,50 +28,47 @@ const CampaignInstructions = ({ instructions }) => {
 
     return (
         <section className={styles.campaignInstructions}>
-            <div className={styles.left}>
+            <div className={styles.imageContainer}>
                 <img
-                    src="/images/campaign-instructions.jpg"
+                    src={image}
                     alt="Billetes por la vida"
                     className={styles.image}
                 />
                 <div className={styles.social}>
-                    <a
-                        href="https://twitter.com/ClimateLatino"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.icon}
-                    >
-                        <FontAwesomeIcon icon={faTwitter} />
-                    </a>
-                    <a
-                        href="https://www.facebook.com/ClimateLatino/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.icon}
-                    >
-                        <FontAwesomeIcon icon={faFacebook} />
-                    </a>
-                    <a
-                        href="https://www.instagram.com/climatelatino/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.icon}
-                    >
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </a>
+                    <p className={styles.socialLegend}>
+                        ¡Sigue la campaña en nuestras redes sociales!
+                    </p>
+                    <div className={styles.linksContainer}>
+                        <a
+                            href="https://www.instagram.com/climatelatino/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.icon}
+                        >
+                            <FontAwesomeIcon icon={faInstagram} color="black" />
+                        </a>
+                        <a
+                            href="https://twitter.com/ClimateLatino"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.icon}
+                        >
+                            <FontAwesomeIcon icon={faTwitter} color="black" />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/ClimateLatino/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.icon}
+                        >
+                            <FontAwesomeIcon icon={faFacebook} color="black" />
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div className={styles.right}>
-                <div className={styles.header}>
-                    <Typography variant="h2">
-                        ¿Listo para movilizarte?
-                    </Typography>
-                    <Typography variant="subtitle1">
-                        Únete a #BilletesPorLaVida y marca una diferencia.
-                    </Typography>
-                </div>
+            <div className={styles.instructionsContainer}>
                 <div className={styles.list}>
-                    <ol>
+                    <ul>
                         {instructions.map((instruction, index) => (
                             <li
                                 key={index}
@@ -82,21 +78,20 @@ const CampaignInstructions = ({ instructions }) => {
                                         : ''
                                 }
                             >
-                                <div className={styles.number}>
-                                    <FontAwesomeIcon icon={faCircle} />
-                                    <Typography variant="h3">
-                                        {index + 1}.
-                                    </Typography>
+                                <div className={styles.instruction}>
+                                    <p className={styles.title}>
+                                        <span className={styles.number}>
+                                            {index + 1}.
+                                        </span>
+                                        <strong>
+                                        {instruction.title}
+                                        </strong>
+                                    </p>
+                                    <p className={styles.subtitle}> {instruction.subtitle}</p>
                                 </div>
-                                <Typography
-                                    variant="body1"
-                                    className={styles.instruction}
-                                >
-                                    {instruction}
-                                </Typography>
                             </li>
                         ))}
-                    </ol>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -104,7 +99,12 @@ const CampaignInstructions = ({ instructions }) => {
 };
 
 CampaignInstructions.propTypes = {
-    instructions: PropTypes.arrayOf(PropTypes.string).isRequired,
+    instructions: PropTypes.arrayOf(
+        PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            subtitle: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 };
 
 export default CampaignInstructions;

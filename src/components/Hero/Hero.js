@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './hero.module.css';
-import { Parallax } from 'react-parallax';
 import Typography from '../Typography/Typography';
 import image from '../../assets/5.png';
 
@@ -28,10 +27,7 @@ const Hero = () => {
                 </Typography>
             </div>
             <div className={styles.image}>
-                <Parallax bgImage={image} strength={500}>
-                    <img src={image} alt="Hero Image" aria-hidden="true" />
-                    <span className={styles.hiddenText}>Hero Image</span>
-                </Parallax>
+                <img src={image} alt="hero" aria-hidden="true" />
             </div>
         </div>
     );

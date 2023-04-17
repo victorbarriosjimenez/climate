@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './valueprops.module.css';
-import Typography from '../Typography/Typography';
 
 const ValueProps = ({ propsData }) => {
     return (
         <div className={styles.propsContainer}>
             {propsData.map((prop, index) => (
-                <div className={styles.prop} key={index}>
-                    <img
-                        src={prop.imgSrc}
-                        alt={prop.title}
-                        className={styles.image}
-                    />
-                    <Typography variant="subtitle1" className={styles.title}>
-                        {prop.title}
-                    </Typography>
-                    <Typography variant="body1" className={styles.subtitle}>
-                        {prop.subtitle}
-                    </Typography>
-                </div>
+                <a href={prop.link} key={index} className={styles.link}>
+                    <div className={styles.prop}>
+                        <img
+                            src={prop.imgSrc}
+                            alt={prop.title}
+                            className={styles.image}
+                        />
+                        <strong>
+                            {prop.title}
+                        </strong>
+                        <p className="">
+                            {prop.subtitle}
+                        </p>
+                    </div>
+                </a>
             ))}
         </div>
     );
@@ -31,6 +32,7 @@ ValueProps.propTypes = {
             imgSrc: PropTypes.string.isRequired,
             title: PropTypes.string.isRequired,
             subtitle: PropTypes.string.isRequired,
+            link: PropTypes.string,
         })
     ).isRequired,
 };
