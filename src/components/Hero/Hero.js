@@ -11,10 +11,10 @@ const Hero = () => {
                 <Typography as="h1" variant="h1" className={styles.title}>
                     Invierte en el Planeta
                 </Typography>
-                <Typography variant="subtitle" as="h4">
+                <Typography variant="subtitle" className={styles.subtitleHero}>
                     Intervención masiva #BilletesPorLaVida
                 </Typography>
-                <Typography as="p" variant="paragraph">
+                <Typography>
                     Este Día de la Tierra, participa en la intervención masiva
                     de billetes con el poderoso llamado a la acción “Invierte en
                     el Planeta” #BilletesPorLaVida. Un mensaje que nos invita a

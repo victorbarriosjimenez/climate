@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '../../components/Typography/Typography';
 import ValueProps from '../../components/ValueProps/ValueProps';
-import styles from './materials.module.css';
+import styles from './Materials.module.css';
 import cinve from '../../assets/cinve.png';
 import finanzas from '../../assets/finanzas.png';
 import millones from '../../assets/100_millones.png';
@@ -51,11 +51,11 @@ const propsData = [
 const Materials = () => {
     return (
         <section className={styles.container}>
-            <Typography variant="h1" as="h1" align='center'>
+            <Typography variant="h1" as="h1" align="center">
                 Materiales para entender de financiamiento climático en América
                 Latina
             </Typography>
-            <Typography variant="subtitle" as="h4">
+            <Typography variant="subtitle" className={styles.subtitleMaterials}>
                 #InvierteEnElPlaneta
             </Typography>
             <ValueProps propsData={propsData} />

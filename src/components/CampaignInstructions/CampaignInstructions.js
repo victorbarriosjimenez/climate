@@ -36,9 +36,9 @@ const CampaignInstructions = ({ instructions }) => {
                     className={styles.image}
                 />
                 <div className={styles.social}>
-                    <p className={styles.socialLegend}>
+                    <Typography className={styles.socialLegend}>
                         ¡Sigue la campaña en nuestras redes sociales!
-                    </p>
+                    </Typography>
                     <div className={styles.linksContainer}>
                         <a
                             href="https://www.instagram.com/climatelatino/"
@@ -103,7 +103,7 @@ const CampaignInstructions = ({ instructions }) => {
                             </li>
                         ))}
                     </ul>
-                    <Typography variant="paragraph">
+                    <Typography>
                         ¡Juntos, hagamos que #BilletesPorLaVida sea un
                         movimiento que marque la diferencia en la lucha contra
                         el cambio climático en nuestra región!
