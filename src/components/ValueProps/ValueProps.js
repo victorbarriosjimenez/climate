@@ -14,7 +14,7 @@ const ValueProps = ({ propsData }) => {
                                 alt={prop.title}
                                 className={styles.image}
                             />
-                            <strong>{prop.title}</strong>
+                            <strong>"{prop.title}"</strong>
                         </div>
                     </a>
                     <p>{prop.subtitle}</p>
