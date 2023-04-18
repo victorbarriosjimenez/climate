@@ -3,12 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { LatinAmerica } from './pages/LatinAmerica/LatinAmerica';
+import { Challenges } from './pages/Challenges/Challenges';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <App />,
+    },
+    {
+        path: '/que-es-america-latina-unida',
+        element: <LatinAmerica />,
+    },
+    {
+        path: 'america-latina-desafios-y-progresos-en-el-financiamiento',
+        element: <Challenges />,
+    },
+]);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
