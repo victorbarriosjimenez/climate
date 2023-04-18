@@ -9,7 +9,7 @@ import Investments from './modules/Investments/Investments';
 import Allies from './modules/Allies/Allies';
 import logo from './assets/6.png';
 import whyInvest from './assets/11.png';
-import campagin from './assets/4.png';
+import campagin from './assets/billetes-por-la-vida-en-toda-america-latina.png';
 
 
 function Main() {
@@ -46,7 +46,7 @@ function Main() {
                   </p>
               </div>
               <Campaign />
-              <Question imageSrc={whyInvest} />
+              <Question showText={true} imageSrc={whyInvest} />
               <Materials />
               <Question imageSrc={logo} />
               <Investments />
