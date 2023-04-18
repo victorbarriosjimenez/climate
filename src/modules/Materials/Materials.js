@@ -34,20 +34,19 @@ const propsData = [
         imgSrc: millones,
         link: 'https://www.instagram.com/p/Ckws1S8pgG2/',
         title: '100.000 millones de dólares para salvar el planeta',
-        subtitle:
-            'Grupo de Financiamiento Climático para Latinoamérica y el Caribe, GFLAC',
+        subtitle: 'Climate Reality América Latina',
     },
     {
         imgSrc: elefante,
         link: 'https://www.instagram.com/p/Ckt-UWsJ4Af/',
         title: 'La ruta de los fondos climáticos internacionales en América Latina',
-        subtitle: 'Subtítulo 2',
+        subtitle: 'Climate Reality América Latina',
     },
     {
         link: 'https://www.climatereality.lat/cop27/financiamiento-climatico-cerrando-la-brecha-para-financiar-el-desarrollo-sostenible/',
         imgSrc: financiamiento,
         title: 'Desafíos y Oportunidades del Financiamiento Climático en América Latina y el Caribe.',
-        subtitle: 'Centro de Investigaciones Económicas',
+        subtitle: 'Climate Reality América Latina',
     },
 ];
 
