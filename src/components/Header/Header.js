@@ -10,8 +10,6 @@ import Typography from '../Typography/Typography';
 import styles from './Header.module.css';
 import logo from '../../assets/logo.png';
 
-import { Link } from 'react-router-dom';
-
 function Header({ backToCampaignSite = false}) {
     return (
         <header>

@@ -157,6 +157,7 @@ ul {
         align-items: center;
         padding-bottom: 5rem;
         margin-top: 1rem;
+        margin-bottom: 2rem;
     }
     nav {
         flex-direction: column;
