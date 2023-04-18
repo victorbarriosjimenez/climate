@@ -134,7 +134,7 @@ const investmentsData = [
           </div>
           <br></br>
           <Link to="https://www.climatereality.lat/cambio-climatico/accion-climatica-solucion-para-mitigar-los-efectos-del-calentamiento-global/">
-              <Button variant="secondary" className={styles.cta}>
+              <Button variant="tertiary">
                   Conoce más acciones individuales aquí
               </Button>
           </Link>
