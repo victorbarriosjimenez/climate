@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import Typography from '../Typography/Typography';
 import styles from './Content.module.css';
 
 function ContentSection({ title, children, image, contentDirection }) {
@@ -13,13 +13,12 @@ function ContentSection({ title, children, image, contentDirection }) {
                   isLeftDirection ? styles.contentLeft : styles.contentRight
               }`}
           >
+              <Typography as="h1" variant="h1" className={styles.title}>
+                  {title}
+              </Typography>
               {children}
           </div>
-          <img
-              className={styles.image}
-              src={image}
-              alt={title}
-          />
+          <img className={styles.image} src={image} alt={title} />
       </section>
   );
 }

@@ -12,7 +12,6 @@ import time from '../../assets/7.png';
 
 const investmentsData = [
     {
-      title: 'Invierte tiempo',
       contentDirection: 'left',
       image: time,
       children: (
@@ -26,7 +25,6 @@ const investmentsData = [
       ),
     },
     {
-      title: 'Usa tu poder de decisión',
       contentDirection: 'right',
       image: power,
       children: (
@@ -41,7 +39,6 @@ const investmentsData = [
       ),
     },
     {
-      title: 'Invierte en soluciones sustentables',
       contentDirection: 'left',
       image: solutions,
       children: (

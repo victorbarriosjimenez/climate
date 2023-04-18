@@ -48,12 +48,15 @@ function Main() {
               <Campaign />
               <Question showText={true} imageSrc={whyInvest} />
               <Materials />
-              <Question imageSrc={logo} />
+              <Question
+                  title="#BilletesPorLaVida en toda América Latina"
+                  imageSrc={logo}
+              />
               <Investments />
               <ContentSection
-                  title="#BilletesPorLaVida en toda América Latina"
                   contentDirection="left"
                   image={campagin}
+                  title="#BilletesPorLaVida en toda América Latina"
               >
                   <p>
                       Climate Reality América Latina, está presentes en 22
