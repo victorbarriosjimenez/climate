@@ -20,16 +20,16 @@ const propsData = [
             'Grupo de Financiamiento Climático para Latinoamérica y el Caribe, GFLAC',
     },
     {
-        imgSrc: rutaFondos,
-        link: 'https://www.avina.net/la-ruta-de-los-fondos-climaticos-internacionales-en-america-latina/',
-        title: 'La ruta de los fondos climáticos internacionales en América Latina',
-        subtitle: 'Fundación AVINA',
-    },
-    {
         link: 'https://cinve.org.uy/wp-content/uploads/2022/08/Documento-de-Trabajo-03_2022-CINVE.pdf',
         imgSrc: cinve,
         title: 'Desafíos y Oportunidades del Financiamiento Climático en América Latina y el Caribe.',
         subtitle: 'Centro de Investigaciones Económicas',
+    },
+    {
+        imgSrc: rutaFondos,
+        link: 'https://www.avina.net/la-ruta-de-los-fondos-climaticos-internacionales-en-america-latina/',
+        title: 'La ruta de los fondos climáticos internacionales en América Latina',
+        subtitle: 'Fundación AVINA',
     },
     {
         imgSrc: millones,

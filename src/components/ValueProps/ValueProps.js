@@ -6,21 +6,19 @@ const ValueProps = ({ propsData }) => {
     return (
         <div className={styles.propsContainer}>
             {propsData.map((prop, index) => (
-                <a href={prop.link} key={index} className={styles.link}>
-                    <div className={styles.prop}>
-                        <img
-                            src={prop.imgSrc}
-                            alt={prop.title}
-                            className={styles.image}
-                        />
-                        <strong>
-                            {prop.title}
-                        </strong>
-                        <p className="">
-                            {prop.subtitle}
-                        </p>
-                    </div>
-                </a>
+                <div className={styles.link}>
+                    <a href={prop.link} key={index}>
+                        <div className={styles.prop}>
+                            <img
+                                src={prop.imgSrc}
+                                alt={prop.title}
+                                className={styles.image}
+                            />
+                            <strong>{prop.title}</strong>
+                        </div>
+                    </a>
+                    <p>{prop.subtitle}</p>
+                </div>
             ))}
         </div>
     );

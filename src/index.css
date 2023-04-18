@@ -24,8 +24,25 @@ body {
   padding: 0 15px;
 }
 
+.paragraph {
+  columns: 2;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.explanation {
+  margin-bottom: 6em;
+}
+
 @media (max-width: 480px) {
  .container {
   width: 100%;
  } 
+ .explanation {
+   margin-bottom: 4em;
+ }
+ .paragraph {
+   columns: 1;
+   margin-bottom: 2rem;
+ }
 }
