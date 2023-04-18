@@ -60,6 +60,8 @@
   width: 100%;
   max-width: 1200px;
   margin-top: 1rem;
+  position: absolute;
+  top: 25%;
 }
 
 .arrowLeft,
@@ -77,10 +79,6 @@
 .arrowRight:hover {
   transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.6);
-}
-
-.arrowLeft {
-  margin-left: 1rem;
 }
 
 .cta {
@@ -104,6 +102,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .arrowLeft {
+    margin-left: -1rem;
+  }
+  
+  .arrowRight {
+    margin-right: -1.2rem;
   }
 
   .mobile {

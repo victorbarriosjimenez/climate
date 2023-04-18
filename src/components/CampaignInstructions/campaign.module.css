@@ -78,7 +78,7 @@ li {
 
 .title {
   font-family: 'Merriweather Regular', serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.1;
 }
 
@@ -89,10 +89,13 @@ li {
 
 .active {
   color: #fff;
-  background: linear-gradient(45deg, #8955fc, #4588b2, #08b96c);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease-in-out infinite;
   border-radius: 4px;
+  background: linear-gradient(271deg, #32f0bf, #365c9b, #7600ff);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  -o-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
 }
 
 .active li > p {
@@ -100,40 +103,39 @@ li {
   transition: 5s;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  25% {
-    background-position: 50% 100%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  75% {
-    background-position: 50% 0%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 21%}
+    50%{background-position:100% 40%}
+    100%{background-position:0% 35%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
 }
 
 @media (max-width: 480px) {
   .campaignInstructions {
     flex-direction: column;
   }
-    .instructionsContainer {
-      width: 100%;
-        padding: 1rem;
-        padding-bottom: 1rem;
-    }
+  .instructionsContainer {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 1rem;
+  }
   .imageContainer {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     padding-bottom: 1rem;
     align-items: center;
   }

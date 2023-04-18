@@ -1,0 +1,41 @@
+.button {
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.button:focus,
+.button:hover {
+  outline: none;
+}
+
+.primary {
+  background-color: #0ca789;
+  color: white;
+}
+
+.secondary {
+  background-color: #2e9bf0;
+  color: white;
+}
+
+.tertiary {
+  background-color: transparent;
+  color: #0ca789;
+  border: 2px solid #0ca789;
+}
+
+.tertiary:hover {
+  background-color: #0ca789;
+  color: white;
+}
+
+.download {
+  margin-top: 2rem;
+}

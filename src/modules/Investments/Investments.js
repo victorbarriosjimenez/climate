@@ -3,7 +3,6 @@ import styles from './investments.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import ContentSection from '../../components/ContentSection/ContentSection';
-import Typography from '../../components/Typography/Typography';
 
 import solutions from '../../assets/9.png';
 import power from '../../assets/8.png';

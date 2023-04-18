@@ -8,19 +8,23 @@ function ContentSection({ title, children, image, contentDirection }) {
   const isLeftDirection = contentDirection === 'left';
 
   return (
-    <section className={styles.container}>
-      <div
-        className={`${styles.content} ${
-          isLeftDirection ? styles.contentLeft : styles.contentRight
-        }`}
-      >
-        <Typography variant="h3" className={styles.title}>
-          {title}
-        </Typography>
-        {children}
-      </div>
-      <img className={`${styles.imageContainer} ${isLeftDirection ? styles.imageContainerRight : styles.imageContainerLeft}`} src={image} alt="" className={styles.image} />
-    </section>
+      <section className={styles.container}>
+          <div
+              className={`${styles.content} ${
+                  isLeftDirection ? styles.contentLeft : styles.contentRight
+              }`}
+          >
+              <Typography variant="h3" className={styles.title}>
+                  {title}
+              </Typography>
+              {children}
+          </div>
+          <img
+              className={styles.image}
+              src={image}
+              alt={title}
+          />
+      </section>
   );
 }
 

@@ -7,18 +7,21 @@ import finanzas from '../../assets/finanzas.png';
 import millones from '../../assets/100_millones.png';
 import elefante from '../../assets/elefante.png';
 import financiamiento from '../../assets/financiamiento.png';
+import rutaFondos from '../../assets/ruta-fondos.png';
+
 
 
 const propsData = [
     {
         imgSrc: finanzas,
-        link: "https://www.sustainablefinance4future.org/_files/ugd/32948d_b226aaa66acb4459b61ef19f6520b243.pdf?index=true",
-        title: "Indice de Finanzas Sostenibles 2022",
-        subtitle: 'Grupo de Financiamiento Climático para Latinoamérica y el Caribe, GFLAC',
+        link: 'https://www.sustainablefinance4future.org/_files/ugd/32948d_b226aaa66acb4459b61ef19f6520b243.pdf?index=true',
+        title: 'Indice de Finanzas Sostenibles 2022',
+        subtitle:
+            'Grupo de Financiamiento Climático para Latinoamérica y el Caribe, GFLAC',
     },
     {
-        imgSrc: '',
-        link: "https://www.avina.net/la-ruta-de-los-fondos-climaticos-internacionales-en-america-latina/",
+        imgSrc: rutaFondos,
+        link: 'https://www.avina.net/la-ruta-de-los-fondos-climaticos-internacionales-en-america-latina/',
         title: 'La ruta de los fondos climáticos internacionales en América Latina',
         subtitle: 'Fundación AVINA',
     },
@@ -30,18 +33,19 @@ const propsData = [
     },
     {
         imgSrc: millones,
-        link: "https://www.instagram.com/p/Ckws1S8pgG2/",
-        title: "100.000 millones de dólares para salvar el planeta",
-        subtitle: 'Grupo de Financiamiento Climático para Latinoamérica y el Caribe, GFLAC',
+        link: 'https://www.instagram.com/p/Ckws1S8pgG2/',
+        title: '100.000 millones de dólares para salvar el planeta',
+        subtitle:
+            'Grupo de Financiamiento Climático para Latinoamérica y el Caribe, GFLAC',
     },
     {
         imgSrc: elefante,
-        link: "https://www.instagram.com/p/Ckt-UWsJ4Af/",
+        link: 'https://www.instagram.com/p/Ckt-UWsJ4Af/',
         title: 'La ruta de los fondos climáticos internacionales en América Latina',
         subtitle: 'Subtítulo 2',
     },
     {
-        link: "https://www.climatereality.lat/cop27/financiamiento-climatico-cerrando-la-brecha-para-financiar-el-desarrollo-sostenible/",
+        link: 'https://www.climatereality.lat/cop27/financiamiento-climatico-cerrando-la-brecha-para-financiar-el-desarrollo-sostenible/',
         imgSrc: financiamiento,
         title: 'Desafíos y Oportunidades del Financiamiento Climático en América Latina y el Caribe.',
         subtitle: 'Centro de Investigaciones Económicas',

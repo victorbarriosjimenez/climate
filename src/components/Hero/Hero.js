@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './hero.module.css';
 import Typography from '../Typography/Typography';
+import Button from '../Button/Button';
 import image from '../../assets/5.png';
 
 const Hero = () => {
@@ -25,6 +26,9 @@ const Hero = () => {
                     vencer la crisis climática en todas sus dimensiones y desde
                     todos los niveles.
                 </Typography>
+                <Button variant="primary" className={styles.download}>
+                    Descarga el toolkit de la campaña
+                </Button>
             </div>
             <div className={styles.image}>
                 <img src={image} alt="hero" aria-hidden="true" />

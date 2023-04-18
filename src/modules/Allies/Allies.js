@@ -11,17 +11,14 @@ const Allies = () => {
       {
           image: carbonoNeutral,
           altText: 'Camino hacia carbono neutral',
-          link: 'https://greenenergy.com',
       },
       {
           image: logoMotum,
           altText: "MOTUM",
-          link: 'https://ecosolutions.com',
       },
       {
           image: wyc,
           altText: "World's Youth For Climate Justice WWF Colombia",
-          link: 'https://sustainableliving.com',
       },
   ];
 
