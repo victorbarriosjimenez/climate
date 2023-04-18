@@ -9,6 +9,9 @@
 .link {
   width: calc(50% - 1rem);
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .link a {
