@@ -133,7 +133,7 @@ const investmentsData = [
               <div className={styles.dots}>{dots}</div>
           </div>
           <br></br>
-          <Link to="/america-latina-desafios-y-progresos-en-el-financiamiento">
+          <Link to="https://www.climatereality.lat/cambio-climatico/accion-climatica-solucion-para-mitigar-los-efectos-del-calentamiento-global/">
               <Button variant="secondary" className={styles.cta}>
                   Conoce más acciones individuales aquí
               </Button>
