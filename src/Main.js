@@ -20,14 +20,10 @@ function Main() {
               <Hero />
               <Campaign />
               <Question
-                  title="¿Por qué invertir en América Latina?"
-                  subtitle="América Latina Unida"
                   imageSrc={whyInvest}
               />
               <Materials />
               <Question
-                  title="¿Cómo puedo invertir yo?"
-                  subtitle="Acciones Individuales Por El Planeta"
                   imageSrc={logo}
               />
               <Investments />
