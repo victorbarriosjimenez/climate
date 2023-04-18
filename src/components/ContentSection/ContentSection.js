@@ -7,11 +7,13 @@ function ContentSection({ title, children, image, contentDirection }) {
   const isLeftDirection = contentDirection === 'left';
 
   return (
-      <section className={styles.container}>
+      <section
+          className={`${styles.container} ${
+              isLeftDirection ? styles.leftA : styles.contentRight
+          }`}
+      >
           <div
-              className={`${styles.content} ${
-                  isLeftDirection ? styles.contentLeft : styles.contentRight
-              }`}
+              className={styles.content}
           >
               <Typography as="h1" variant="h1" className={styles.title}>
                   {title}

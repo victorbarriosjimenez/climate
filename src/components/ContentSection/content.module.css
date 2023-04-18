@@ -25,6 +25,10 @@
 }
 
 
+.leftA {
+  flex-direction: row-reverse;
+}
+
 .content p {
   text-align: left;
 }

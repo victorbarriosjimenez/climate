@@ -54,7 +54,7 @@ function Main() {
               />
               <Investments />
               <ContentSection
-                  contentDirection="left"
+                  contentDirection="right"
                   image={campagin}
                   title="#BilletesPorLaVida en toda América Latina"
               >
