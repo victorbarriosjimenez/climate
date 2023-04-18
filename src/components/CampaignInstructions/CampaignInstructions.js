@@ -43,25 +43,34 @@ const CampaignInstructions = ({ instructions }) => {
                             href="https://www.instagram.com/climatelatino/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={styles.icon}
                         >
-                            <FontAwesomeIcon icon={faInstagram} color="black" />
+                            <FontAwesomeIcon
+                                icon={faInstagram}
+                                color="black"
+                                size="2x"
+                            />
                         </a>
                         <a
                             href="https://twitter.com/ClimateLatino"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={styles.icon}
                         >
-                            <FontAwesomeIcon icon={faTwitter} color="black" />
+                            <FontAwesomeIcon
+                                icon={faTwitter}
+                                color="black"
+                                size="2x"
+                            />
                         </a>
                         <a
                             href="https://www.facebook.com/ClimateLatino/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={styles.icon}
                         >
-                            <FontAwesomeIcon icon={faFacebook} color="black" />
+                            <FontAwesomeIcon
+                                icon={faFacebook}
+                                color="black"
+                                size="2x"
+                            />
                         </a>
                     </div>
                 </div>
@@ -83,11 +92,12 @@ const CampaignInstructions = ({ instructions }) => {
                                         <span className={styles.number}>
                                             {index + 1}.
                                         </span>
-                                        <strong>
-                                        {instruction.title}
-                                        </strong>
+                                        <strong>{instruction.title}</strong>
                                     </p>
-                                    <p className={styles.subtitle}> {instruction.subtitle}</p>
+                                    <p className={styles.subtitle}>
+                                        {' '}
+                                        {instruction.subtitle}
+                                    </p>
                                 </div>
                             </li>
                         ))}
