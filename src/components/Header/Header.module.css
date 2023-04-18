@@ -9,6 +9,83 @@ nav {
     height: var(--header-height);
 }
 
+.latamLink {
+    text-decoration: none;
+    /* color: white; */
+    font-size: 4rem;
+}
+
+.latamLink > h3 {
+    color: white;
+    background: linear-gradient(271deg, #32f0bf, #365c9b, #7600ff);
+    background-size: 600% 600%;
+    padding: 10px 10px;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    -o-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 21%
+    }
+
+    50% {
+        background-position: 100% 40%
+    }
+
+    100% {
+        background-position: 0% 35%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 51%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 51%
+    }
+}
+
+.latamLink {
+    color: white;
+}
+
 .logo img {
     width: 35%; 
     height: auto; 

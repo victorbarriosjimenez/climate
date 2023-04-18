@@ -5,6 +5,7 @@ import {
     faTwitter,
     faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import Typography from '../Typography/Typography';
 
 import styles from './Header.module.css';
 import logo from '../../assets/logo.png';
@@ -28,9 +29,9 @@ function Header({ backToCampaignSite = false}) {
                         </a>
                     </div>
                     <div className={styles.rightSection}>
-                        <Link to="/que-es-america-latina-unida">
-                            America Latina Unida
-                        </Link>
+                        <a className={styles.latamLink} href="/que-es-america-latina-unida">
+                            <Typography align='center' as='h3'>America Latina Unida</Typography>
+                        </a>
                         <ul className={styles.socialLinks}>
                             <li>
                                 <a
