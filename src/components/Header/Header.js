@@ -20,7 +20,7 @@ function Header({ backToCampaignSite = false}) {
                         <a
                             href={
                                 backToCampaignSite
-                                    ? 'https://climate-one.vercel.app/'
+                                    ? '/'
                                     : 'https://www.climatereality.lat/}'
                             }
                         >
