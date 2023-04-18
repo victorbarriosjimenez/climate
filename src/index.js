@@ -12,7 +12,7 @@ const rootElement = document.getElementById('root');
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/invierte en el planeta',
         element: <Main />,
     },
     {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         element: <LatinAmerica />,
     },
     {
-        path: 'america-latina-desafios-y-progresos-en-el-financiamiento',
+        path: '/america-latina-desafios-y-progresos-en-el-financiamiento',
         element: <Challenges />,
     },
 ]);
