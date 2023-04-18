@@ -11,10 +11,7 @@ const Hero = () => {
                 <Typography as="h1" variant="h1" className={styles.title}>
                     Invierte en el Planeta
                 </Typography>
-                <Typography
-                    variant="subtitle"
-                    as="h4"
-                >
+                <Typography variant="subtitle" as="h4">
                     Intervención masiva #BilletesPorLaVida
                 </Typography>
                 <Typography as="p" variant="paragraph">
@@ -25,9 +22,11 @@ const Hero = () => {
                     vencer la crisis climática en todas sus dimensiones y desde
                     todos los niveles.
                 </Typography>
-                <Button variant="primary" className={styles.download}>
-                    Descarga el toolkit de la campaña
-                </Button>
+                <a target='_blank' href="https://drive.google.com/drive/folders/1z7hbgUXucsvG_723STa7LkYfPOhCrTce?usp=sharing">
+                    <Button variant="primary" className={styles.download}>
+                        Descarga el toolkit de la campaña
+                    </Button>
+                </a>
             </div>
             <div className={styles.image}>
                 <img src={image} alt="hero" aria-hidden="true" />
