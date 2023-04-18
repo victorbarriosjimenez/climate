@@ -49,7 +49,6 @@ function Main() {
               <Question showText={true} imageSrc={whyInvest} />
               <Materials />
               <Question
-                  title="#BilletesPorLaVida en toda América Latina"
                   imageSrc={logo}
               />
               <Investments />
