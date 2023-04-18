@@ -16,8 +16,7 @@ const propsData = [
         imgSrc: finanzas,
         link: 'https://www.sustainablefinance4future.org/_files/ugd/32948d_b226aaa66acb4459b61ef19f6520b243.pdf?index=true',
         title: 'Indice de Finanzas Sostenibles 2022',
-        subtitle:
-            'Grupo de Financiamiento Climático para Latinoamérica y el Caribe, GFLAC',
+        subtitle: 'GFLAC',
     },
     {
         link: 'https://cinve.org.uy/wp-content/uploads/2022/08/Documento-de-Trabajo-03_2022-CINVE.pdf',

@@ -78,4 +78,8 @@
   .link {
     width: 100%;  
   }
+  .link strong {
+    width: 70%;
+    text-align: center;
+  }
 }
