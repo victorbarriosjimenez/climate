@@ -12,7 +12,7 @@ const rootElement = document.getElementById('root');
 
 const router = createBrowserRouter([
     {
-        path: '/invierte en el planeta',
+        path: '/',
         element: <Main />,
     },
     {
