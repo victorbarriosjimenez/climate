@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '../Typography/Typography';
 import styles from './Question.module.css';
+import Button from '../../components/Button/Button';
+import { Link } from 'react-router-dom';
 
 function QuestionHighlighted({ title, subtitle, imageSrc, imageAlt, showText = false }) {
   return (
@@ -18,11 +20,12 @@ function QuestionHighlighted({ title, subtitle, imageSrc, imageAlt, showText = f
           {showText && (
               <>
                   <p className={styles.textCenter}>
-                      <strong>En América Latina</strong> las problemáticas ambientales que atraviesan nuestros
-                      países son muy similares y una de las más importantes son
-                      las limitaciones financieras para poder implementar
-                      políticas de mitigación y adaptación al cambio climático.
-                      Enpocas palabras, nuestra región no recibe suficiente
+                      <strong>En América Latina</strong> las problemáticas
+                      ambientales que atraviesan nuestros países son muy
+                      similares y una de las más importantes son las
+                      limitaciones financieras para poder implementar políticas
+                      de mitigación y adaptación al cambio climático. Enpocas
+                      palabras, nuestra región no recibe suficiente
                       financiamiento.
                   </p>
                   <strong>
@@ -40,6 +43,13 @@ function QuestionHighlighted({ title, subtitle, imageSrc, imageAlt, showText = f
                       de los recursos naturales en nuestro territorio.
                   </p>
               </>
+          )}
+          {showText && (
+              <Link to="/america-latina-desafios-y-progresos-en-el-financiamiento">
+                  <Button variant="secondary" className={styles.cta}>
+                      Leer más
+                  </Button>
+              </Link>
           )}
       </div>
   );

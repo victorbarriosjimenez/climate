@@ -7,7 +7,7 @@ import Campaign from './modules/Campaign/Campaign';
 import ContentSection from "./components/ContentSection/ContentSection";
 import Investments from './modules/Investments/Investments';
 import Allies from './modules/Allies/Allies';
-import logo from './assets/6.png';
+import logo from './assets/invertiryo.png';
 import whyInvest from './assets/11.png';
 import campagin from './assets/billetes-por-la-vida-en-toda-america-latina.png';
 

@@ -3,8 +3,8 @@ import styles from './investments.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Button from '../../components/Button/Button';
-import ContentSection from '../../components/ContentSection/ContentSection';
 import { Link } from 'react-router-dom';
+import ContentSection from '../../components/ContentSection/ContentSection';
 
 import solutions from '../../assets/9.png';
 import power from '../../assets/8.png';
@@ -132,6 +132,7 @@ const investmentsData = [
               </div>
               <div className={styles.dots}>{dots}</div>
           </div>
+          <br></br>
           <Link to="/america-latina-desafios-y-progresos-en-el-financiamiento">
               <Button variant="secondary" className={styles.cta}>
                   Conoce más acciones individuales aquí

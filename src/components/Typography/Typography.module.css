@@ -1,0 +1,59 @@
+.Typography {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.Typography__font-brandon {
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.Typography__font-merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.Typography__color-green {
+  color: #008056;
+}
+
+.Typography__color-blue {
+  color: #00a7ed;
+}
+
+.h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.h4 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.h5 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.h6 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 2rem;
+  line-height: 1.2;
+}
