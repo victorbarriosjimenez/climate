@@ -12,7 +12,7 @@ import whyInvest from './assets/11.png';
 import campagin from './assets/4.png';
 
 
-function App() {
+function Main() {
   return (
       <div>
           <Header />
@@ -34,8 +34,7 @@ function App() {
               <ContentSection
                   title="#BilletesPorLaVida en toda América Latina"
                   contentDirection="left"
-                  image={campagin}
-              >
+                  image={campagin}>
                   <p>
                       Climate Reality América Latina, está presentes en 22
                       países de la región con una comunidad de más de 5600
@@ -56,4 +55,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
