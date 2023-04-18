@@ -14,7 +14,7 @@ function Footer() {
         <footer className={styles.footer}>
             <nav className={styles.nav}>
                 <div className={styles.logo}>
-                    <a href="/">
+                    <a href="https://www.climatereality.lat/">
                         <img src={logo} alt="Campaign Logo" />
                     </a>
                 </div>

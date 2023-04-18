@@ -17,9 +17,9 @@ function Header() {
             <div className="container">
                 <nav className={styles.nav}>
                     <div className={styles.logo}>
-                        <Link to="/">
+                        <a href="https://www.climatereality.lat/">
                             <img src={logo} alt="Campaign Logo" />
-                        </Link>
+                        </a>
                     </div>
                     <div className={styles.rightSection}>
                         <Link to="/que-es-america-latina-unida">
