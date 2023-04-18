@@ -29,24 +29,7 @@ const Campaign = () => {
 
     return (
         <section className={styles.section}>
-            <div className={styles.titleContainer}>
-                <Typography variant="h1" as="p" className={styles.title}>
-                    ¿Listo para movilizarte?
-                </Typography>
-                <Typography variant="h2" className={styles.subtitle}>
-                    Únete a nuestra campaña para marcar la diferencia
-                </Typography>
-            </div>
-            <div>
-                <CampaignInstructions instructions={instructions} />
-                <div className={styles.callToAction}>
-                    <Typography variant="body1">
-                        ¡Juntos, hagamos que #BilletesPorLaVida sea un
-                        movimiento que marque la diferencia en la lucha contra
-                        el cambio climático en nuestra región!
-                    </Typography>
-                </div>
-            </div>
+            <CampaignInstructions instructions={instructions} />
         </section>
     );
 };

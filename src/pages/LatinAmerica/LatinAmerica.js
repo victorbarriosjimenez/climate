@@ -11,7 +11,7 @@ export const LatinAmerica = () => {
                 <Typography variant="h1" as="h1">
                     ¿Qué es América Latina Unida?
                 </Typography>
-                <Typography variant="h2" as="h2">
+                <Typography variant="subtitle" as="h2">
                     Una nueva narrativa para nuestra región
                 </Typography>
                 <p className={styles.paragraph}>
@@ -43,7 +43,7 @@ export const LatinAmerica = () => {
                     hasta nuestro trabajo con comunidades, nuestro objetivo es
                     crear una América Latina Unida.
                 </p>
-                <Typography variant="h2" as="h2">
+                <Typography variant="subtitle" as="h2">
                     América Latina Unida por el clima
                 </Typography>
                 <p className={styles.paragraph}>

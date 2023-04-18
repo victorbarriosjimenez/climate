@@ -8,6 +8,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import styles from './Campaign.module.css';
 import image from '../../assets/10.png';
+import Typography from '../Typography/Typography';
 
 const CampaignInstructions = ({ instructions }) => {
     const [currentInstruction, setCurrentInstruction] = useState(0);
@@ -102,6 +103,11 @@ const CampaignInstructions = ({ instructions }) => {
                             </li>
                         ))}
                     </ul>
+                    <Typography variant="paragraph">
+                        ¡Juntos, hagamos que #BilletesPorLaVida sea un
+                        movimiento que marque la diferencia en la lucha contra
+                        el cambio climático en nuestra región!
+                    </Typography>
                 </div>
             </div>
         </section>

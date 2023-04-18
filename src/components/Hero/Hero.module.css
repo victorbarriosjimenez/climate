@@ -9,6 +9,7 @@
 
 .hero .text {
   width: calc(50% - 1rem);
+  padding-right: 1rem;
 }
 
 .hero .image {

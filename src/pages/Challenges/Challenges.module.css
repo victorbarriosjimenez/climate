@@ -3,3 +3,7 @@
   column-gap: 2rem;
   margin-bottom: 2rem;
 }
+
+.list {
+  list-style-type: disc;
+}

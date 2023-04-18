@@ -6,7 +6,7 @@ import Typography from '../Typography/Typography';
 function OurClients({ title, clients }) {
   return (
     <div className={styles.container}>
-      <Typography variant="h2" as="h3">
+      <Typography variant="h2" as="h3" align='center'>
         {title}
       </Typography>
       <div className={styles.logoContainer}>

@@ -1,59 +1,65 @@
-.Typography {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-.Typography__font-brandon {
-  font-family: 'Brandon Grotesque', sans-serif;
+.title {
+  font-family: 'Brandon Grotesque Bold', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-style: normal;
-}
-
-.Typography__font-merriweather {
-  font-family: 'Merriweather', serif;
-}
-
-.Typography__color-green {
   color: #008056;
 }
 
-.Typography__color-blue {
+.subtitle {
+  font-family: 'Brandon Grotesque Medium', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
   color: #00a7ed;
+  font-size: 24px;
+}
+
+.paragraph {
+  font-family: 'Merriweather', serif;
+}
+
+.body {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .h1 {
-  font-size: 3.5rem;
-  line-height: 1.2;
+  font-size: 40px;
+  line-height: 1.25;
 }
 
 .h2 {
-  font-size: 3rem;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.25;
 }
 
 .h3 {
-  font-size: 2.5rem;
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 1.25;
 }
 
 .h4 {
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.25;
 }
 
 .h5 {
-  font-size: 1.5rem;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.25;
 }
 
 .h6 {
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.25;
 }
 
-.subtitle {
-  font-size: 2rem;
-  line-height: 1.2;
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
 }

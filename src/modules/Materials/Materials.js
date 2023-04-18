@@ -9,8 +9,6 @@ import elefante from '../../assets/elefante.png';
 import financiamiento from '../../assets/financiamiento.png';
 import rutaFondos from '../../assets/ruta-fondos.png';
 
-
-
 const propsData = [
     {
         imgSrc: finanzas,
@@ -53,11 +51,11 @@ const propsData = [
 const Materials = () => {
     return (
         <section className={styles.container}>
-            <Typography variant="h2" as="h2" className={styles.title}>
+            <Typography variant="h1" as="h1" align='center'>
                 Materiales para entender de financiamiento climático en América
                 Latina
             </Typography>
-            <Typography variant="subtitle1" className={styles.subtitle}>
+            <Typography variant="subtitle" as="h4">
                 #InvierteEnElPlaneta
             </Typography>
             <ValueProps propsData={propsData} />

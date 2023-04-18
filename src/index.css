@@ -2,6 +2,35 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Brandon Grotesque Bold';
+  src: url('./fonts/Brandon-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+ @font-face {
+  font-family: 'Brandon Grotesque Medium';
+  src: url('./fonts/Brandon-Medium.otf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/Brandon-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Merriweather Regular';
+  src: url('./fonts/Merriweather-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   --primary-color: #4caf50;
   --text-color: #333;
