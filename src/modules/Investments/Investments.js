@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import styles from './investments.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Button from '../../components/Button/Button';
 import ContentSection from '../../components/ContentSection/ContentSection';
+import { Link } from 'react-router-dom';
 
 import solutions from '../../assets/9.png';
 import power from '../../assets/8.png';
@@ -97,41 +99,45 @@ const investmentsData = [
   ));
 
   return (
-    <div className={styles.container}>
-      <div className={styles.desktop}>
-        {contentSections}
-        <div className={styles.arrowContainer}>
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className={styles.arrowLeft}
-            onClick={handlePrevClick}
-          />
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className={styles.arrowRight}
-            onClick={handleNextClick}
-          />
-        </div>
-        <div className={styles.dots}>{dots}</div>
+      <div className={styles.container}>
+          <div className={styles.desktop}>
+              {contentSections}
+              <div className={styles.arrowContainer}>
+                  <FontAwesomeIcon
+                      icon={faChevronLeft}
+                      className={styles.arrowLeft}
+                      onClick={handlePrevClick}
+                  />
+                  <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className={styles.arrowRight}
+                      onClick={handleNextClick}
+                  />
+              </div>
+              <div className={styles.dots}>{dots}</div>
+          </div>
+          <div className={styles.mobile}>
+              {contentSections[activeIndex]}
+              <div className={styles.arrowContainer}>
+                  <FontAwesomeIcon
+                      icon={faChevronLeft}
+                      className={styles.arrowLeft}
+                      onClick={handlePrevClick}
+                  />
+                  <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className={styles.arrowRight}
+                      onClick={handleNextClick}
+                  />
+              </div>
+              <div className={styles.dots}>{dots}</div>
+          </div>
+          <Link to="/america-latina-desafios-y-progresos-en-el-financiamiento">
+              <Button variant="secondary" className={styles.cta}>
+                  Conoce más acciones individuales aquí
+              </Button>
+          </Link>
       </div>
-      <div className={styles.mobile}>
-        {contentSections[activeIndex]}
-        <div className={styles.arrowContainer}>
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className={styles.arrowLeft}
-            onClick={handlePrevClick}
-          />
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className={styles.arrowRight}
-            onClick={handleNextClick}
-          />
-        </div>
-        <div className={styles.dots}>{dots}</div>
-      </div>
-      <button className={styles.cta}>Conoce más acciones individuales aquí</button>
-    </div>
   );
 }
 
