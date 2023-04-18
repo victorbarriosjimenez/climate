@@ -6,7 +6,7 @@ import {
     faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 
-import styles from './header.module.css';
+import styles from './Header.module.css';
 import logo from '../../assets/logo.png';
 
 import { Link } from 'react-router-dom';

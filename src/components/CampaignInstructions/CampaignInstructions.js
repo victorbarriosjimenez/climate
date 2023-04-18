@@ -6,7 +6,7 @@ import {
     faTwitter,
     faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
-import styles from './campaign.module.css';
+import styles from './Campaign.module.css';
 import image from '../../assets/10.png';
 
 const CampaignInstructions = ({ instructions }) => {

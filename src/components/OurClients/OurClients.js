@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ourclients.module.css';
+import styles from './Ourclients.module.css';
 import Typography from '../Typography/Typography';
 
 function OurClients({ title, clients }) {

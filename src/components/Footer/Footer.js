@@ -6,7 +6,7 @@ import {
     faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 
-import styles from './footer.module.css';
+import styles from './Footer.module.css';
 import logo from '../../assets/logo.png';
 
 function Footer() {

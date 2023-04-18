@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './valueprops.module.css';
+import styles from './Valueprops.module.css';
 
 const ValueProps = ({ propsData }) => {
     return (

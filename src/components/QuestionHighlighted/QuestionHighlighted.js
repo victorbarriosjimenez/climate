@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '../Typography/Typography';
-import styles from './question.module.css';
+import styles from './Question.module.css';
 
 function QuestionHighlighted({ title, subtitle, imageSrc, imageAlt }) {
   return (

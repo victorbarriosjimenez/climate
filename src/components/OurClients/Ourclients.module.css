@@ -1,0 +1,44 @@
+.container {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+  transition: filter 0.3s ease-in-out;
+}
+
+.logoContainer img {
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.logoContainer img:hover {
+  filter: none;
+  transition: .5s;
+}
+
+@media (max-width: 480px) {
+  .container {
+      margin: .5rem auto;
+      max-width: 1200px;
+      padding: 2rem;
+      text-align: center;
+  }
+}

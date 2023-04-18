@@ -1,0 +1,147 @@
+.campaignInstructions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  width: calc(50% - 1rem);
+  padding-right: 4rem;
+  padding-top: 4rem;
+  margin-bottom: 20px;
+}
+
+.linksContainer {
+  margin-top: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.socialLegend {
+  margin: 0 10px 0 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.instructionsContainer {
+  width: calc(50% - 1rem);
+}
+
+.list {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  justify-content: center;
+  padding: 15px;
+}
+
+
+.subtitle {
+  font-family: 'Merriweather Regular', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.instruction {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: 'Merriweather Regular', serif;
+  font-size: 1.3rem;
+  line-height: 1.1;
+}
+
+.number {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.active {
+  color: #fff;
+  border-radius: 4px;
+  background: linear-gradient(271deg, #32f0bf, #365c9b, #7600ff);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  -o-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+.active li > p {
+  color: white;
+  transition: 5s;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 21%}
+    50%{background-position:100% 40%}
+    100%{background-position:0% 35%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+@media (max-width: 480px) {
+  .campaignInstructions {
+    flex-direction: column;
+  }
+  .instructionsContainer {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 1rem;
+  }
+  .imageContainer {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1rem;
+    align-items: center;
+  }
+  .social {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}

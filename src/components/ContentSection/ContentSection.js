@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '../Typography/Typography';
 
-import styles from './content.module.css';
+import styles from './Content.module.css';
 
 function ContentSection({ title, children, image, contentDirection }) {
   const isLeftDirection = contentDirection === 'left';

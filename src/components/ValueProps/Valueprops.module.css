@@ -1,0 +1,63 @@
+.propsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.link {
+  width: 33.33%;
+}
+
+.prop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.prop img {
+  max-width: 150px;
+  height: auto;
+  float: left;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #666;
+}
+
+.link &:hover {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .prop {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;    
+  }
+
+  .prop img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .link {
+    width: 100%;  
+  }
+}
