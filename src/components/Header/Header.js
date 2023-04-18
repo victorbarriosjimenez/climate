@@ -11,13 +11,19 @@ import logo from '../../assets/logo.png';
 
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ backToCampaignSite = false}) {
     return (
         <header>
             <div className="container">
                 <nav className={styles.nav}>
                     <div className={styles.logo}>
-                        <a href="https://www.climatereality.lat/">
+                        <a
+                            href={
+                                backToCampaignSite
+                                    ? 'https://climate-one.vercel.app/'
+                                    : 'https://www.climatereality.lat/}'
+                            }
+                        >
                             <img src={logo} alt="Campaign Logo" />
                         </a>
                     </div>
