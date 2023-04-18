@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "reactSnap": {
-    "fixWebpackChunksIssue": false
+    "fixWebpackChunksIssue": false,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
