@@ -7,7 +7,7 @@
 }
 
 .link {
-  width: 33.33%;
+  width: calc(50% - 1rem);
 }
 
 .prop {
