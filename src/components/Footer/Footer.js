@@ -68,15 +68,17 @@ function Footer() {
                             </li>
                         </ul>
                         <div>
-                            <div className={styles.container}>
-                                <p>Suscríbete a nuestra gaceta climática</p>
+                            <div>
+                                <Typography>
+                                    Suscríbete a nuestra gaceta climática
+                                </Typography>
                                 <button className={styles.button}>
                                     Suscribirme
                                 </button>
                             </div>
-                            <p className={styles.joinText}>
+                            <Typography>
                                 ¡Únete a nuestra comunidad digital!
-                            </p>
+                            </Typography>
                         </div>
                     </div>
                 </div>
