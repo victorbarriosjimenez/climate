@@ -14,9 +14,17 @@ nav {
     height: auto; 
 }
 
+.socialLinks {
+    margin-left: 2rem;
+}
+
 .navLinks,
 .socialLinks {
     list-style: none;
+}
+
+.socialLinks li {
+    padding: 8px;
 }
 
 ul {
@@ -88,6 +96,9 @@ ul {
         padding: 0px
     }
 
+    .socialLinks {
+        margin-left: 0px;
+    }
 
     .unityText {
         font-size: 14px;

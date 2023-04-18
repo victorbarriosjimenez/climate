@@ -28,7 +28,7 @@ function Header() {
                         <ul className={styles.socialLinks}>
                             <li>
                                 <a
-                                    href="https://www.instagram.com/"
+                                    href="https://www.instagram.com/climatelatino/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -40,7 +40,7 @@ function Header() {
                             </li>
                             <li>
                                 <a
-                                    href="https://www.facebook.com/"
+                                    href="https://www.facebook.com/ClimateLatino"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -52,7 +52,7 @@ function Header() {
                             </li>
                             <li>
                                 <a
-                                    href="https://twitter.com/"
+                                    href="https://twitter.com/ClimateLatino"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
