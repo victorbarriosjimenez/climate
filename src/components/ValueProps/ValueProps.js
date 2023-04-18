@@ -7,7 +7,7 @@ const ValueProps = ({ propsData }) => {
         <div className={styles.propsContainer}>
             {propsData.map((prop, index) => (
                 <div className={styles.link}>
-                    <a href={prop.link} key={index}>
+                    <a target="_blank"  href={prop.link} key={index}>
                         <div className={styles.prop}>
                             <img
                                 src={prop.imgSrc}
