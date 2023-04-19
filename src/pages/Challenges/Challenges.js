@@ -2,16 +2,35 @@ import React from 'react';
 import Typography from '../../components/Typography/Typography';
 import Header from '../../components/Header/Header';
 import styles from './Challenges.module.css';
+import YoutubeBackground from 'react-youtube-background';
 
 
 export const Challenges = () => {
     return (
         <>
             <Header backToCampaignSite={true} />
-            <div className="container">
-                <Typography variant="title" as="h1">
-                    AMÉRICA LATINA: DESAFÍOS Y PROGRESOS EN EL FINANCIAMIENTO
-                </Typography>
+            <YoutubeBackground
+                className={styles.video}
+                videoId="9yPq4S3j9Jk"
+                aspectRatio="4:3"
+                overlay="rgba(0,0,0,.4)"
+                playerOptions={{
+                    start: 400,
+                }}
+            >
+                <div className={styles.text}>
+                    <Typography
+                        align='center'
+                        variant="title"
+                        as="h1"
+                        className={styles.videoText}
+                    >
+                        AMÉRICA LATINA: DESAFÍOS Y PROGRESOS EN EL
+                        FINANCIAMIENTO
+                    </Typography>
+                </div>
+            </YoutubeBackground>
+            <div className={styles.paragraphText}>
                 <p>
                     De acuerdo con el Foro Económico Mundial, asegurar un futuro
                     más resiliente debe ser nuestra prioridad ya que el cambio
