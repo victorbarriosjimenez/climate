@@ -7,8 +7,7 @@
 }
 
 .imageContainer {
-  position: relative;
-  width: calc(50% - 1rem);
+  width: calc(50% - 2rem);
   padding-right: 4rem;
   padding-top: 4rem;
   margin-bottom: 20px;
@@ -39,7 +38,6 @@
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
-  white-space: nowrap;
 }
 
 .icon {
@@ -94,19 +92,61 @@ li {
 }
 
 .active {
-  color: #fff;
+  color: white !important;
   border-radius: 4px;
-  background: linear-gradient(271deg, #32f0bf, #365c9b, #7600ff);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 3s ease infinite;
-  -moz-animation: AnimationName 3s ease infinite;
-  -o-animation: AnimationName 3s ease infinite;
-  animation: AnimationName 3s ease infinite;
+/* animation: animateBg 1s linear infinite; */
+  background-image: linear-gradient(90deg, #1656d4, #44c8ca, #845ddf, #1656d4, #44c8ca);
+  background-size: 400% 100%;
+  padding-left: 25px;
+  -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  box-shadow: -3px 4px 42px -20px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -3px 4px 42px -20px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px 4px 42px -20px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.3;
+  }
+
+  60% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .active li > p {
   color: white;
   transition: 5s;
+}
+
+
+@keyframes animateBg {
+  0% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 @-webkit-keyframes AnimationName {
@@ -132,22 +172,26 @@ li {
 
 @media (max-width: 480px) {
   .campaignInstructions {
+    width: 100%;
     flex-direction: column;
   }
   .instructionsContainer {
     width: 100%;
-    padding: 0 2rem;
     padding-bottom: 1rem;
   }
   .imageContainer {
-    width: 100%;
-    padding: 2rem;
     padding-bottom: 1rem;
-    align-items: center;
-  }
-  .social {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
+  }
+  .imageContainer {
+      width: 100%;
+      padding: 1rem;
+    }
+  .social {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 }

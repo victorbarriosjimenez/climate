@@ -9,7 +9,7 @@ const Hero = () => {
         <>
             <div className={styles.hero}>
                 <div className={styles.text}>
-                    <Typography as="h1" variant="h1" className={styles.title}>
+                    <Typography as="h1" variant="h1" className={styles.titleHero}>
                         Invierte en el Planeta
                     </Typography>
                     <Typography

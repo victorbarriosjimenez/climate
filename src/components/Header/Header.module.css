@@ -1,7 +1,3 @@
-header {
-    margin-top: 2rem;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -9,22 +5,12 @@ nav {
     height: var(--header-height);
 }
 
-.latamLink {
-    text-decoration: none;
-    /* color: white; */
-    font-size: 4rem;
+.latamLink  h3 {
+    text-decoration: underline;
+    color: #2a382c;
+    font-size: 1.2rem;
 }
 
-.latamLink > h3 {
-    color: white;
-    background: linear-gradient(271deg, #32f0bf, #365c9b, #7600ff);
-    background-size: 600% 600%;
-    padding: 10px 10px;
-    -webkit-animation: AnimationName 3s ease infinite;
-    -moz-animation: AnimationName 3s ease infinite;
-    -o-animation: AnimationName 3s ease infinite;
-    animation: AnimationName 3s ease infinite;
-}
 
 @-webkit-keyframes AnimationName {
     0% {
@@ -128,6 +114,7 @@ ul {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    width: 50%;
 }
 
 .unityText {
@@ -157,7 +144,7 @@ ul {
     header {
         margin-top: 0px;
         align-items: center;
-        height: 320px;
+        height: 280px;
         margin-top: 2rem;
     }
     nav {
@@ -197,5 +184,6 @@ ul {
         flex-direction: column;
         gap: 5px;
         justify-content: center;
+        width: 100%;
     }
 }

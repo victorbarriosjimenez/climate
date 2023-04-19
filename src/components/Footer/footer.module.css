@@ -1,4 +1,4 @@
-header {
+çheader {
   margin-top: 1rem;
 }
 
@@ -71,6 +71,9 @@ ul {
 
 /* Media queries para mobile - Ajustar disposición de elementos en el header */
 @media (max-width: 480px) {
+  .rightSection {
+    width: 100%;
+  }
   nav {
     flex-direction: column;
   }
@@ -145,16 +148,16 @@ ul {
   }
 }
 
-.latamLink>h3 {
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(271deg, #32f0bf, #365c9b, #7600ff);
-  background-size: 600% 600%;
+.latamLink h3 {
+  text-decoration: underline;
+  color: #2a382c;
+  font-size: 1.2rem;
   padding: 10px 10px;
-  -webkit-animation: AnimationName 3s ease infinite;
-  -moz-animation: AnimationName 3s ease infinite;
-  -o-animation: AnimationName 3s ease infinite;
-  animation: AnimationName 3s ease infinite;
+}
+
+.latamSocial {
+  flex-direction: row;
+  align-items: center;
 }
 
 .latamLink {

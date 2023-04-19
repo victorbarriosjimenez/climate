@@ -20,15 +20,15 @@ function Footer() {
                     </a>
                 </div>
                 <div className={styles.rightSection}>
-                    <a
-                        className={styles.latamLink}
-                        href="/que-es-america-latina-unida"
-                    >
-                        <Typography align="center" as="h3">
-                            America Latina Unida
-                        </Typography>
-                    </a>
-                    <div>
+                    <div className={styles.latamSocial}>
+                        <a
+                            className={styles.latamLink}
+                            href="/que-es-america-latina-unida"
+                        >
+                            <Typography align="center" as="h3">
+                                America Latina Unida
+                            </Typography>
+                        </a>
                         <ul className={styles.socialLinks}>
                             <li>
                                 <a
@@ -67,19 +67,19 @@ function Footer() {
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                    <div>
                         <div>
-                            <div>
-                                <Typography>
-                                    Suscríbete a nuestra gaceta climática
-                                </Typography>
-                                <button className={styles.button}>
-                                    Suscribirme
-                                </button>
-                            </div>
                             <Typography>
-                                ¡Únete a nuestra comunidad digital!
+                                Suscríbete a nuestra gaceta climática
                             </Typography>
+                            <button className={styles.button}>
+                                Suscribirme
+                            </button>
                         </div>
+                        <Typography>
+                            ¡Únete a nuestra comunidad digital!
+                        </Typography>
                     </div>
                 </div>
             </nav>
