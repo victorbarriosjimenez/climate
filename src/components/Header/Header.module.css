@@ -155,10 +155,10 @@ ul {
 /* Media queries para mobile - Ajustar disposición de elementos en el header */
 @media (max-width: 480px) {
     header {
+        margin-top: 0px;
         align-items: center;
-        padding-bottom: 5rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        height: 320px;
+        margin-top: 2rem;
     }
     nav {
         flex-direction: column;

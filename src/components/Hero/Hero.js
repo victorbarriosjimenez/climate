@@ -39,7 +39,7 @@ const Hero = () => {
                     <img src={image} alt="hero" aria-hidden="true" />
                 </div>
             </div>
-            <div className="container">
+            <div className={styles.paragraphContainer}>
                 <div className="paragraphs">
                     <p>
                         Este 22 de abril, en Climate Reality América Latina, nos
