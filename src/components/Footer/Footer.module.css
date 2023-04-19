@@ -14,6 +14,11 @@ nav {
   height: auto;
 }
 
+.sectionLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navLinks,
 .socialLinks {
   list-style: none;
@@ -41,8 +46,8 @@ ul {
 
 .rightSection {
   display: flex;
-  flex-direction: row;
-  width: 50%;
+  flex-direction: column;
+  width: 40%;
   gap: 10px;
   justify-content: space-between;
 }
@@ -71,6 +76,10 @@ ul {
 
 /* Media queries para mobile - Ajustar disposición de elementos en el header */
 @media (max-width: 480px) {
+  .sectionLinks {
+    flex-direction: column;
+    width: 100%;
+  }
   .rightSection {
     width: 100%;
   }
@@ -115,6 +124,7 @@ ul {
 
   .rightSection {
     flex-direction: column;
+    align-items: flex-start;
     gap: 5px;
     justify-content: center;
   }
@@ -156,8 +166,9 @@ ul {
 }
 
 .latamSocial {
+  width: 100%;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .latamLink {
@@ -218,4 +229,8 @@ ul {
   100% {
     background-position: 0% 51%
   }
+}
+
+.subscribe {
+  width: 100%;
 }

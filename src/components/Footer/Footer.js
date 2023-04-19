@@ -9,6 +9,8 @@ import {
 import styles from './Footer.module.css';
 import logo from '../../assets/logo.png';
 import Typography from '../Typography/Typography';
+import Button from '../Button/Button';
+
 
 function Footer() {
     return (
@@ -20,7 +22,7 @@ function Footer() {
                     </a>
                 </div>
                 <div className={styles.rightSection}>
-                    <div className={styles.latamSocial}>
+                    <div className={styles.sectionLinks}>
                         <a
                             className={styles.latamLink}
                             href="/que-es-america-latina-unida"
@@ -68,14 +70,19 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className={styles.subscribe}>
                         <div>
-                            <Typography>
-                                Suscríbete a nuestra gaceta climática
+                            <Typography as="p">
+                                <strong>
+                                    Suscríbete a nuestra gaceta climática
+                                </strong>
                             </Typography>
-                            <button className={styles.button}>
+                            <Button
+                                variant="primary"
+                                className={styles.download}
+                            >
                                 Suscribirme
-                            </button>
+                            </Button>
                         </div>
                         <Typography>
                             ¡Únete a nuestra comunidad digital!
