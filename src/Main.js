@@ -18,39 +18,10 @@ function Main() {
           <Header />
           <div className="container">
               <Hero />
-              <div className="explanation">
-                  <p className="paragraph">
-                      Este 22 de abril, en Climate Reality América Latina, nos
-                      unimos a la icónica y potente campaña del Día de la
-                      Tierra, una celebración que, año tras año, convoca a
-                      personas, empresas y gobiernos de todos los ámbitos para
-                      unirse en un esfuerzo colectivo y audaz en pro de la
-                      sostenibilidad y la acción climática. Este año, la
-                      temática que inspira la campaña a nivel mundial es
-                      "Invierte en el Planeta" y desde nuestras oficinas de
-                      América Latina lanzamos el llamado para que toda la región
-                      se una a la demostración masiva #BilletesPorLaVida porque
-                      tenemos la fiel convicción de que la mejor inversión de
-                      todas, es invertir en nuestro planeta.
-                      <strong>
-                          ¡Que los recursos de todo el mundo sirvan a la vida!
-                      </strong>
-                      <br></br>
-                      <strong>“Invierte en el Planeta”</strong>, es un mensaje
-                      para movilizar recursos financieros a la acción climática
-                      pero también es una misiva para recordar que podemos
-                      destinar nuestro tiempo y nuestras acciones a favor del
-                      planeta. Este es un llamado a todos los niveles: empresas,
-                      gobiernos, organizaciones y cualquiera de nosotros
-                      ¡podemos hacer que los recursos sirvan a la vida!
-                  </p>
-              </div>
               <Campaign />
               <Question showText={true} imageSrc={whyInvest} />
               <Materials />
-              <Question
-                  imageSrc={logo}
-              />
+              <Question imageSrc={logo} />
               <Investments />
               <ContentSection
                   contentDirection="right"

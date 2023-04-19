@@ -15,7 +15,7 @@ function ContentSection({ title, children, image, contentDirection }) {
           <div
               className={styles.content}
           >
-              <Typography as="h1" variant="h1" className={styles.title}>
+              <Typography as="h5" variant="h3" className={styles.title}>
                   {title}
               </Typography>
               {children}
