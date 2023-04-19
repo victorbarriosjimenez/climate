@@ -9,7 +9,11 @@ const Hero = () => {
         <>
             <div className={styles.hero}>
                 <div className={styles.text}>
-                    <Typography as="h1" variant="h1" className={styles.titleHero}>
+                    <Typography
+                        as="h1"
+                        variant="h1"
+                        className={styles.titleHero}
+                    >
                         Invierte en el Planeta
                     </Typography>
                     <Typography
@@ -27,10 +31,11 @@ const Hero = () => {
                         todas sus dimensiones y desde todos los niveles.
                     </Typography>
                     <a
+                        className={styles.download}
                         target="_blank"
                         href="https://drive.google.com/drive/folders/1z7hbgUXucsvG_723STa7LkYfPOhCrTce?usp=sharing"
                     >
-                        <Button variant="primary" className={styles.download}>
+                        <Button variant="primary">
                             Descarga el toolkit de la campaña
                         </Button>
                     </a>

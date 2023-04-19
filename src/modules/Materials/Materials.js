@@ -51,11 +51,11 @@ const propsData = [
 const Materials = () => {
     return (
         <section className={styles.container}>
-            <Typography variant="h2" as="h3" align="center">
+            <Typography variant="title" as="h2" align="center">
                 Materiales para entender de financiamiento climático en América
                 Latina
             </Typography>
-            <Typography variant="subtitle" as="p">
+            <Typography variant="subtitle" as="h4">
                 #InvierteEnElPlaneta
             </Typography>
             <ValueProps propsData={propsData} />
