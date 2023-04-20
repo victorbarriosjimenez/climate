@@ -78,9 +78,8 @@ function Footer() {
                                     Suscríbete a nuestra gaceta climática
                                 </strong>
                             </Typography>
-                            <Link>
+                            <Link to="http://eepurl.com/hy2v3H">
                                 <Button
-                                    to="http://eepurl.com/hy2v3H"
                                     variant="primary"
                                     className={styles.download}
                                 >
