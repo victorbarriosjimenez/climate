@@ -2882,6 +2882,11 @@
     "@typescript-eslint/types" "5.57.1"
     "eslint-visitor-keys" "^3.3.0"
 
+"@vercel/analytics@^1.0.0":
+  "integrity" "sha512-RQmj7pv82JwGDHrnKeRc6TtSw2U7rWNubc2IH0ernTzWTj02yr9zvIYiYJeztsBzrJtWv7m8Nz6vxxb+cdEtJw=="
+  "resolved" "https://registry.npmjs.org/@vercel/analytics/-/analytics-1.0.0.tgz"
+  "version" "1.0.0"
+
 "@webassemblyjs/ast@1.11.1":
   "integrity" "sha512-ukBh14qFLjxTQNTXocdyksN5QdM28S1CxHt2rdskFyL+xFV7VremuBLVbmCePj+URalXBENx/9Lm7lnhihtCSw=="
   "resolved" "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.11.1.tgz"
@@ -12795,7 +12800,7 @@
     "loose-envify" "^1.1.0"
     "object-assign" "^4.1.1"
 
-"react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.3", "react@>=16.8", "react@16.x.x || 17.x.x || 18.x.x":
+"react@^16.8||^17||^18", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>=16.3", "react@>=16.8", "react@16.x.x || 17.x.x || 18.x.x":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

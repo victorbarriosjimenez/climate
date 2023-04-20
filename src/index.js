@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { LatinAmerica } from './pages/LatinAmerica/LatinAmerica';
 import { Challenges } from './pages/Challenges/Challenges';
 import { hydrate, render } from "react-dom";
+import { Analytics } from '@vercel/analytics/react';
 
 const rootElement = document.getElementById('root');
 
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
 const App = (
     <React.StrictMode>
         <RouterProvider router={router} />
+        <Analytics />
     </React.StrictMode>
 );
 
