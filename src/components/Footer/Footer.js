@@ -10,6 +10,7 @@ import styles from './Footer.module.css';
 import logo from '../../assets/logo.png';
 import Typography from '../Typography/Typography';
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -77,12 +78,15 @@ function Footer() {
                                     Suscríbete a nuestra gaceta climática
                                 </strong>
                             </Typography>
-                            <Button
-                                variant="primary"
-                                className={styles.download}
-                            >
-                                Suscribirme
-                            </Button>
+                            <Link>
+                                <Button
+                                    to="http://eepurl.com/hy2v3H"
+                                    variant="primary"
+                                    className={styles.download}
+                                >
+                                    Suscribirme
+                                </Button>
+                            </Link>
                         </div>
                         <Typography>
                             ¡Únete a nuestra comunidad digital!
