@@ -10,7 +10,7 @@ import styles from './Campaign.module.css';
 import image from '../../assets/10.png';
 import Typography from '../Typography/Typography';
 
-const CampaignInstructions = ({ instructions }) => {
+const CampaignInstructions = ({ instructions, boldText }) => {
     const [currentInstruction, setCurrentInstruction] = useState(0);
 
     useEffect(() => {
@@ -99,6 +99,7 @@ const CampaignInstructions = ({ instructions }) => {
                                         {' '}
                                         {instruction.subtitle}
                                     </p>
+                                    <strong className={styles.boldDescription}>{instruction.boldText}</strong>
                                 </div>
                             </li>
                         ))}
@@ -119,6 +120,7 @@ CampaignInstructions.propTypes = {
         PropTypes.shape({
             title: PropTypes.string.isRequired,
             subtitle: PropTypes.string.isRequired,
+            boldText: PropTypes.string,
         })
     ).isRequired,
 };

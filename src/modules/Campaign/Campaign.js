@@ -1,6 +1,5 @@
 import React from 'react';
 import CampaignInstructions from '../../components/CampaignInstructions/CampaignInstructions';
-import Typography from '../../components/Typography/Typography';
 import styles from './campaign.module.css';
 
 const Campaign = () => {
@@ -9,6 +8,8 @@ const Campaign = () => {
             title: 'Marca un billete',
             subtitle:
                 'Escoge un billete de baja denominación y márcalo con el mensaje "Invierte en el Planeta" junto al hashtag #BilletesPorLaVida. Deja volar tu imaginación y sé parte de este potente llamado a la acción.',
+            boldText:
+                '*puedes utilizar cinta transparente (para evitar que el billete pierda su valor si es el caso.)',
         },
         {
             title: 'Comparte tu creación en redes sociales',
